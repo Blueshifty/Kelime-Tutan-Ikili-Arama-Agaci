@@ -15,44 +15,12 @@ char kelimes[5];
 typedef struct n node;
 
 int karsilastir(char k1[5],char k2[5]){
-	int a = k1[0];
-	int b = k2[0];
-	if(a == b){
-		a = k1[1];
-		b = k2[1];
-		if(a == b){
-			a = k1[2];
-			b = k2[2];
-			if(a == b){
-				a = k1[3];
-				b = k2[3];
-				if(a > b){
-					return 1;
-				}
-				else{                                      /* Iki Kelimeyi Alfabetik Karsilastiriyor.*/      
-					return 0;                             /*Agaca Eleman Yerlestirirken Bu Fonksiyona Gore*/
-				}                                        /*Saga veya Sola Yerlestirdim.*/
-			}                                            /*4 Harfede Bakiyor*/
-			if(a > b){
-				return 1;
-			}                           
-			else{
-				return 0;
-			}
-		}
-		if(a>b){
-			return 1;
-		}
-		else{
-			return 0;
-		}
-	}
-	if(a > b){
-		return 1;
-	}
-else{
-	return 0;
-}
+   int i;
+   for(i=0;i<5;i++={
+     if(k1[i]>k2[i]){return 1;}
+     if(k1[i]<k2[i]){return 0;}
+      }
+   return 0
 }
 
 node * ekleme_fonk(node *agac,char k[5]){
@@ -106,8 +74,8 @@ void dolas2(node *agac){
    agac = ekleme_fonk(agac,okunan_kelime);                                                      
    x++;
    }
-   printf("%d Tane Kelime Okundu, Ikili Arama Agacina Eklendi.",x-1);          /*x-1 Koyma Sebebim Son Kelimeyi Bir Kez Daha Okuması*/
-   return agac;                                                          /*Buyuk Ihtimal c'yi EOF'a Esitlemesinde Bir Sıkıntı Cıkıyor*/
+   printf("%d Tane Kelime Okundu, Ikili Arama Agacina Eklendi.",x-1);          /*x-1 Koyma Sebebim Son Kelimeyi Bir Kez Daha OkumasÄ±*/
+   return agac;                                                          /*Buyuk Ihtimal c'yi EOF'a Esitlemesinde Bir SÄ±kÄ±ntÄ± CÄ±kÄ±yor*/
    }      
 
 void arama(node*agac,char k[5],int d){
