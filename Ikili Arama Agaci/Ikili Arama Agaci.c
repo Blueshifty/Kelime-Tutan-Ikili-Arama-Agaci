@@ -20,7 +20,7 @@ int karsilastir(char k1[5],char k2[5]){
      if(k1[i]>k2[i]){return 1;}
      if(k1[i]<k2[i]){return 0;}
       }
-   return 0
+   return 0;
 }
 
 node * ekleme_fonk(node *agac,char k[5]){
