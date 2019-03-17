@@ -147,7 +147,7 @@ scanf("%d",&s);
                
 int main(){
 	printf("\t\t**********UYARI**********\n");
-	printf("Kodun 103. Satirina Kelime Dosyasinin Yolunu Girebilirsiniz.\n");
+	printf("Kodun 71. Satirina Kelime Dosyasinin Yolunu Girebilirsiniz.\n");
 	printf("\nKoda Kucuk Notlar Biraktim. Kolayca Inceliyebilirsiniz. :)\n");
 	printf("Kolay Gelsin :)\n");
 	printf("Menudeyken 1-2-3 Rakamlarini Kullanmaya Dikkat Edin, Sikinti Cikartabiliyor.");
